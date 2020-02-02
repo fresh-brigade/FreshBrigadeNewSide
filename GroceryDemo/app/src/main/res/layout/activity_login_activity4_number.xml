@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<!--    <RelativeLayout-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/numberLayout"-->
+<!--        android:background="#fff"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--&lt;!&ndash;    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/iv"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="@dimen/_180sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="@dimen/_240sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:background="@drawable/logo"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_centerVertical="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginTop="180dp"/>&ndash;&gt;-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="#fff"-->
+<!--        android:weightSum="10"-->
+<!--        android:orientation="horizontal">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="+91"-->
+<!--            android:textColor="#000"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_weight=".5"-->
+<!--            android:textSize="20dp"-->
+<!--            />-->
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/number"-->
+<!--            android:layout_weight="8"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:hint="MOBILE NUMBER"-->
+<!--            android:textColor="#000"-->
+<!--            android:maxLength="10"-->
+<!--            android:inputType="number"-->
+<!--            android:padding="6dp"-->
+<!--            android:background="@drawable/background_bottom_ll"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnOtp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:background="@color/green"-->
+<!--            android:text="submit"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_gravity="center" />-->
+<!--    </LinearLayout>-->
+<!--    </RelativeLayout>-->
+
+<!--   <RelativeLayout-->
+<!--       android:visibility="visible"-->
+<!--       android:id="@+id/otpLayout"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="match_parent">-->
+<!--       <TextView-->
+<!--           android:layout_width="365dp"-->
+<!--           android:layout_height="34dp"-->
+<!--           android:layout_marginTop="50dp"-->
+<!--           android:gravity="center"-->
+<!--           android:layout_marginLeft="20dp"-->
+<!--           android:text="We have sent a OTP number on your mobile number"-->
+<!--           android:textSize="15dp" />-->
+<!--       <TextView-->
+<!--           android:id="@+id/number_"-->
+<!--           android:layout_width="365dp"-->
+<!--           android:layout_height="34dp"-->
+<!--           android:layout_marginTop="80dp"-->
+<!--           android:gravity="center"-->
+<!--           android:layout_marginLeft="20dp"-->
+<!--           android:text="number"-->
+<!--           android:textSize="15dp" />-->
+<!--       <TextView-->
+<!--           android:id="@+id/editnumber"-->
+<!--           android:layout_width="365dp"-->
+<!--           android:layout_height="34dp"-->
+<!--           android:layout_marginTop="120dp"-->
+<!--           android:gravity="center"-->
+<!--           android:textColor="#38A1F1"-->
+<!--           android:layout_marginLeft="20dp"-->
+<!--           android:text="Edit?"-->
+<!--           android:textSize="15dp" />-->
+
+<!--       <EditText-->
+<!--           android:id="@+id/otp"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:layout_marginHorizontal="100dp"-->
+<!--           android:layout_marginTop="200dp"-->
+<!--           android:gravity="center"-->
+<!--           android:maxLength="6"-->
+<!--           android:inputType="number" />-->
+
+<!--       <TextView-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:layout_below="@+id/otp"-->
+<!--           android:layout_marginTop="50dp"-->
+<!--           android:gravity="center"-->
+<!--           android:text="ENTER SMS VERIFICATON CODE"-->
+<!--           android:textSize="20dp" />-->
+
+<!--       <LinearLayout-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:orientation="horizontal"-->
+<!--           android:id="@+id/butlayout"-->
+<!--           android:layout_alignParentBottom="true"-->
+<!--           android:weightSum="2"-->
+<!--           >-->
+<!--           <Button-->
+<!--               android:id="@+id/resendcode"-->
+<!--               android:layout_width="0dp"-->
+<!--               android:layout_height="wrap_content"-->
+<!--               android:layout_weight="1"-->
+<!--               android:textColor="@color/white"-->
+<!--               android:background="#BDBBBB"-->
+<!--               android:text="Resend Code" />-->
+<!--           <Button-->
+<!--               android:id="@+id/otpconfirm"-->
+<!--               android:layout_width="0dp"-->
+<!--               android:layout_height="wrap_content"-->
+<!--               android:layout_weight="1"-->
+<!--               android:textColor="@color/white"-->
+<!--               android:background="@color/green"-->
+<!--               android:text="Next"-->
+
+<!--               />-->
+
+<!--       </LinearLayout>-->
+<!--   </RelativeLayout>-->
+
+
+</RelativeLayout>

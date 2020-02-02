@@ -1,0 +1,5 @@
+include 'admin', 'user', 'com.freshbrigade.market.util'
+
+project(':admin').projectDir = new File(settingsDir, 'modules/admin')
+project(':user').projectDir = new File(settingsDir, 'modules/user')
+project(':com.freshbrigade.market.util').projectDir = new File(settingsDir, 'modules/com.freshbrigade.market.util')

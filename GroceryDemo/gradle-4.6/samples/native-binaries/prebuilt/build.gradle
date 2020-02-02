@@ -1,0 +1,46 @@
+apply plugin: 'cpp'
+model {
+    buildTypes {
+        debug
+        release
+    }
+    repositories {
+        libs(PrebuiltLibraries) {
+            boost {
+                headers.srcDir "3rd-party-lib/boost_1_55_0/boost"
+            }
+            util {
+                headers.srcDir "3rd-party-lib/com.freshbrigade.market.util/src/com.freshbrigade.market.util/headers"
+                binaries.withType(StaticLibraryBinary) {
+                    def libName = targetPlatform.operatingSystem.windows ? 'com.freshbrigade.market.util.lib' : 'libutil.a'
+                    staticLibraryFile = file("3rd-party-lib/com.freshbrigade.market.util/build/libs/com.freshbrigade.market.util/static/${buildType.name}/${libName}")
+                }
+                binaries.withType(SharedLibraryBinary) {
+                    def os = targetPlatform.operatingSystem
+                    def baseDir = "3rd-party-lib/com.freshbrigade.market.util/build/libs/com.freshbrigade.market.util/shared/${buildType.name}"
+                    if (os.windows) {
+                        // Windows uses a .dll file, with a different link file if it exists (not Cygwin or MinGW)
+                        sharedLibraryFile = file("${baseDir}/com.freshbrigade.market.util.dll")
+                        if (file("${baseDir}/com.freshbrigade.market.util.lib").exists()) {
+                            sharedLibraryLinkFile = file("${baseDir}/com.freshbrigade.market.util.lib")
+                        }
+                    } else if (os.macOsX) {
+                        sharedLibraryFile = file("${baseDir}/libutil.dylib")
+                    } else {
+                        sharedLibraryFile = file("${baseDir}/libutil.so")
+                    }
+                }
+            }
+        }
+    }
+
+    components {
+        main(NativeExecutableSpec) {
+            sources {
+                cpp.lib library: 'boost', linkage: 'api'
+                cpp.lib library: 'com.freshbrigade.market.util', linkage: 'static'
+            }
+        }
+    }
+}
+

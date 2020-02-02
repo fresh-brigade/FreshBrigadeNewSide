@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.freshbrigade.market.LoginActivity4Number">
+
+
+    <RelativeLayout
+        android:id="@+id/numberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView_91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_img"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:text="India (+91)"
+            android:textColor="#000"
+            android:textSize="@dimen/_20ssp" />
+
+        <EditText
+            android:id="@+id/viewlook"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView_91"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:editable="false" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/viewlook"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="Your Phone Number" />
+
+        <TextView
+            android:id="@+id/text_of_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:text="@string/otp_text" />
+
+        <ImageButton
+            android:id="@+id/btn_Otp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/text_of_otp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/next_btn_for_otp"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_navigate_next_black_24dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/otpLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Varification Code"
+            android:textColor="#000"
+            android:textSize="@dimen/_20ssp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:id="@+id/t1"/>
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_text_varification_time"
+            android:layout_below="@+id/t1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <EditText
+            android:id="@+id/otp_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/t2"
+            android:maxLength="10"
+            android:inputType="number"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:hint="Enter OTP" />
+
+        <ImageButton
+            android:id="@+id/btn_otp_code"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/ic_navigate_next_black_24dp"
+            android:background="@drawable/next_btn_for_otp"
+            android:layout_below="@+id/otp_confirm"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

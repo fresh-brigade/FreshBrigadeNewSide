@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.freshbrigade.com.freshbrigade.market.BusinessTypeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        app:titleTextAppearance="@style/RobotoBoldTextAppearance"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_20ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/retailer_iv"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/retailer"/>
+
+        <TextView
+            android:layout_toRightOf="@id/retailer_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Retailer"/>
+        <Switch
+            android:id="@+id/retailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#008F36"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#51000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/wholesaler_iv"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/wholesaler"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_toRightOf="@id/wholesaler_iv"
+            android:text="Wholesales"/>
+        <Switch
+            android:id="@+id/wholesaler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#008F36"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#51000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/distributor_iv"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/wholesaler"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_4sdp"
+            android:layout_toRightOf="@id/distributor_iv"
+            android:text="Distributor"/>
+        <Switch
+            android:id="@+id/distributor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#008F36"
+            android:layout_alignParentEnd="true"/>
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#51000000"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/manufacturer_iv"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/manufacture"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/manufacturer_iv"
+            android:text="Manufacturer"/>
+        <Switch
+            android:id="@+id/manufacturer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#008F36"
+            android:layout_alignParentEnd="true"/>
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#51000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/brand_iv"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/brand"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_toRightOf="@id/brand_iv"
+            android:text="Brand"/>
+        <Switch
+            android:id="@+id/brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#008F36"
+            android:layout_alignParentEnd="true"/>
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+       android:layout_margin="5dp"
+        android:background="#51000000"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Agent_iv"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/agent"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Agent_iv"
+            android:layout_margin="5dp"
+            android:text="Agent"/>
+        <Switch
+            android:id="@+id/agent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#008F36"
+            android:layout_alignParentEnd="true"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
